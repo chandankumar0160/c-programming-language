@@ -1,17 +1,17 @@
 #include <stdio.h>
-//structure for storing the real and imaginery
-//values of complex number
-struct complexnum{
+struct complexnum
+{
    int real, img;
 };
-complexnum sumcomplex(complexnum a, complexnum b){
+complexnum sumcomplex(complexnum a, complexnum b)
+{
    struct complexnum c;
-   //Adding up two complex numbers
    c.real = a.real + b.real;
    c.img = a.img + b.img;
    return c;
 }
-int main(){
+int main()
+{
    struct complexnum a = {1, 2};
    struct complexnum b = {4, 5};
    struct complexnum c = sumcomplex(a, b);
